@@ -1,0 +1,68 @@
+/* General app container styling */
+.todo-app {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input field for adding new todo */
+.add-todo input {
+    width: 70%;
+    padding: 8px;
+}
+
+/* Button for adding new todo */
+.add-todo button {
+    padding: 8px 12px;
+}
+
+/* Styling for the todo list */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align items in a horizontal row */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: center; /* Center the list items horizontally */
+    gap: 10px; /* Add spacing between items */
+}
+
+/* Each individual todo item */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align text and button vertically */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    width: 100%; /* Make each item fill the container */
+    max-width: 350px; /* Limit the maximum width for each item */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Mark completed todos with a line-through */
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Filter buttons */
+.filter button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/* Styling for the delete button to match the other buttons */
+.delete-btn {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px; /* Rounded corners */
+    margin-left: 10px; /* Space between text and delete button */
+}
+
+/* Hover effect for the delete button */
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
